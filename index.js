@@ -2,7 +2,7 @@ const express = require("express");
 const helmet = require("helmet");
 const cors = require("cors");
 const app = express();
-const PORT = 5002;
+const PORT = 80;
 
 app.use(express.json());
 app.use(helmet());
