@@ -6,12 +6,12 @@ try {
     
     const url = req.body.url;    
     const result = await getFBInfo(url)
-    res.status(200).json({
+    res.json({
         status:true,
         response: result
     });   
 } catch (error) {
-    res.status(500).json({
+    res.json({
         status:false,
         error: error
     })
